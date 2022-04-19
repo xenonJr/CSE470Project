@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">BD Plasma Bank</string>
+    <string name="donate">প্লাজমা দান করুন</string>
+    <string name="receive">প্লাজমা অনুসন্ধান করুন</string>
+    <string name="BD_Plasma_Bank">BD Plasma Bank</string>
+    <string name="about_button">.  সম্পর্কিত</string>
+    <string name="about">সম্পর্কিত</string>
+    <string name="about_dis">Onushondhani lab দ্বারা তৈরিকৃত এই অ্যাপটি কোভিড ১৯ রোগে সুস্থ হওয়া
+        রোগীর প্লাজমা অসুস্থ রোগীর কাছে দ্রুত পৌঁছে  দিতে সহায়তা করে থাকে। তাই এই মহৎ উদ্যোগটিকে
+        উৎসাহিত করার জন্য অ্যাপটি ডাউনলোড করুন ও ৫ তারা রেটিং দেয়ার মাধ্যমে এই অ্যাপটিকে সবার
+        মাঝে ছড়িয়ে দিতে ও দ্রুত খুঁজে পেতে সহায়তা করুন। Contact the developer for business
+        purpose : onushondhanilab@gmail.com</string>
+    <string name="rate">অ্যাপ্লিকেশন রেট করুন</string>
+    <string name="login">Login</string>
+    <string name="sign_up_account">Sign up</string>
+    <string name="username">নাম :</string>
+    <string name="phone_number">phone number</string>
+    <string name="blood_group">রক্তের গ্রুপ :</string>
+    <string name="district">বিভাগ :</string>
+    <string name="sub_district">জেলা :</string>
+    <string name="gender">লিঙ্গ :</string>
+    <string name="user">ব্যবহারকারীর মেইল</string>
+    <string name="password">পাসওয়ার্ড</string>
+    <string name="email">Email</string>
+    <string name="logout">LOGOUT</string>
+    <string name="number">ফোন নাম্বার : </string>
+    <string name="dis">This is the alpha version of the App.Brought to you by Onushondhani Lab.
+        \n \n
+
+Please do not expect full functionality rather this helps in a very simple way
+It will allow you to find the user and his/her contact info for plasma donor
+You are one of the tester and we expect your review on our app which you can
+submit through the Feedback section of the app. \n
+
+Sincerly, \n
+Z.K.Xenon \n Arman Khan \n
+Contributor of App Development of Onusdhondhani Lab </string>
+    <string-array name="blood_group">
+        <item>A+</item>
+        <item>A-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+    <string-array name="jela">
+        <item>Dhaka</item>
+        <item>CTG</item>
+        <item>KHULNA</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+    <string-array name="UDhaka">
+        <item>dhaka</item>
+        <item>gazipur</item>
+        <item>gopalganj</item>
+        <item>kishorganj</item>
+        <item>madaripur</item>
+        <item>manikganj</item>
+        <item>munsiganj</item>
+        <item>narayanganj</item>
+        <item>rajbari</item>
+        <item>shariatpur</item>
+        <item>faridpur</item>
+        <item>tangail</item>
+        <item>narshindi</item>
+    </string-array>
+
+    <string-array name="Uctg">
+        <item>bandarban</item>
+        <item>brahmanbaria</item>
+        <item>chadpur</item>
+        <item>chattogram</item>
+        <item>cumilla</item>
+        <item>cox bazar</item>
+        <item>feni</item>
+        <item>khagrachhari</item>
+        <item>lakshmipur</item>
+        <item>noakhali</item>
+        <item>rangamati</item>
+    </string-array>
+    <string-array name="Ukhul">
+        <item>habiganj</item>
+        <item>moulvibazar</item>
+        <item>sunamganj</item>
+        <item>sylhet</item>
+    </string-array>
+</resources>
