@@ -24,16 +24,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".permission"></activity>
-        <activity android:name=".disclimer" />
-        <activity android:name=".Splash" />
-        <activity android:name=".profileDoner" />
-        <activity android:name=".profileOwn" />
-        <activity android:name=".about" />
-        <activity android:name=".searchPlasma" />
-        <activity android:name=".signup_activity" />
-        <activity android:name=".Auth" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Controller.permissionController"></activity>
+        <activity android:name=".View.disclimerPage" />
+        <activity android:name=".View.splashPage" />
+        <activity android:name=".View.profileDoner" />
+        <activity android:name=".View.profileOwn" />
+        <activity android:name=".View.aboutPage" />
+        <activity android:name=".View.searchPlasma" />
+        <activity android:name=".View.signupPage" />
+        <activity android:name=".Controller.authController" />
+        <activity android:name=".View.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

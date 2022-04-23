@@ -1,4 +1,4 @@
-package com.example.pd;
+package com.example.pd.Controller;
 
 import android.Manifest;
 import android.app.Activity;
@@ -14,18 +14,19 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
-import java.io.StringReader;
+import com.example.pd.Model.Doner;
+import com.example.pd.R;
+
 import java.util.List;
 
-public class CA extends ArrayAdapter {
+public class AdapterController extends ArrayAdapter {
     private  int MY_PERMISSIONS_REQUEST_CALL_PHONE = 0;
     private Activity con;
     private List<Doner> students;
 
 
-    public CA( Activity context,List<Doner> students) {
+    public AdapterController(Activity context, List<Doner> students) {
         super(context, R.layout.detailslayout, students);
         this.con = context;
         this.students = students;

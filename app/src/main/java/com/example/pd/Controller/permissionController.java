@@ -1,4 +1,4 @@
-package com.example.pd;
+package com.example.pd.Controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,12 +8,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.pd.R;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 
 import java.util.List;
 
-public class permission extends AppCompatActivity {
+public class permissionController extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,12 +33,12 @@ public class permission extends AppCompatActivity {
                 PermissionListener permissionListener = new PermissionListener() {
                     @Override
                     public void onPermissionGranted() {
-                        Toast.makeText(permission.this, "Permission Granted", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(permissionController.this, "Permission Granted", Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
                     public void onPermissionDenied(List<String> deniedPermissions) {
-                        Toast.makeText(permission.this, "Permission Denied\n" + deniedPermissions.toString(), Toast.LENGTH_SHORT)
+                        Toast.makeText(permissionController.this, "Permission Denied\n" + deniedPermissions.toString(), Toast.LENGTH_SHORT)
                                 .show();
                     }
                 };

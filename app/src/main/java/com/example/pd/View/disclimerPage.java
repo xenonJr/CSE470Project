@@ -1,4 +1,4 @@
-package com.example.pd;
+package com.example.pd.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class disclimer extends AppCompatActivity {
+import com.example.pd.R;
+
+public class disclimerPage extends AppCompatActivity {
 
     private Button n;
     @Override
@@ -18,7 +20,7 @@ public class disclimer extends AppCompatActivity {
         n.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(disclimer.this,MainActivity.class);
+                Intent intent = new Intent(disclimerPage.this, MainActivity.class);
                 startActivity(intent);
             }
         });

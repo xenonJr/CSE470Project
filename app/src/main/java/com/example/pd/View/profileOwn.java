@@ -1,31 +1,22 @@
-package com.example.pd;
+package com.example.pd.View;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
+import com.example.pd.Model.Doner;
+import com.example.pd.R;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
 
 public class profileOwn extends AppCompatActivity {
 
@@ -51,7 +42,7 @@ public class profileOwn extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(profileOwn.this,MainActivity.class);
+                Intent intent = new Intent(profileOwn.this, MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -91,7 +82,7 @@ public class profileOwn extends AppCompatActivity {
             sin.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(profileOwn.this,signup_activity.class);
+                    Intent intent = new Intent(profileOwn.this, signupPage.class);
                     startActivity(intent);
                 }
             });

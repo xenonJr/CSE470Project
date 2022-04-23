@@ -1,4 +1,4 @@
-package com.example.pd;
+package com.example.pd.Controller;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,12 +11,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.pd.R;
+import com.example.pd.View.MainActivity;
+import com.example.pd.View.signupPage;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Auth extends AppCompatActivity {
+public class authController extends AppCompatActivity {
 
     private Button signup,login,button;
     private FirebaseAuth mAuth;
@@ -33,7 +36,7 @@ public class Auth extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(Auth.this,signup_activity.class);
+                Intent intent= new Intent(authController.this, signupPage.class);
                 startActivity(intent);
             }
         });
@@ -47,7 +50,7 @@ public class Auth extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Auth.this,MainActivity.class);
+                Intent intent = new Intent(authController.this, MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -79,13 +82,13 @@ public class Auth extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if(task.isSuccessful()){
-                    Toast.makeText(Auth.this, "Login Successfull", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(authController.this, "Login Successfull", Toast.LENGTH_SHORT).show();
                     finish();
                     Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                     startActivity(intent);
                 }
                 else {
-                    Toast.makeText(Auth.this, "Not Successfull", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(authController.this, "Not Successfull", Toast.LENGTH_SHORT).show();
                 }
 
             }

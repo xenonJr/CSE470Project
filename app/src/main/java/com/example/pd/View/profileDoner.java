@@ -1,4 +1,4 @@
-package com.example.pd;
+package com.example.pd.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -13,6 +13,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.pd.R;
 
 public class profileDoner extends AppCompatActivity {
 
@@ -34,7 +36,7 @@ public class profileDoner extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(profileDoner.this,MainActivity.class);
+                Intent intent = new Intent(profileDoner.this, MainActivity.class);
                 startActivity(intent);
             }
         });

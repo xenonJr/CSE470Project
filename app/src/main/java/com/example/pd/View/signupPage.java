@@ -1,4 +1,4 @@
-package com.example.pd;
+package com.example.pd.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +15,9 @@ import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.pd.Controller.authController;
+import com.example.pd.Model.Doner;
+import com.example.pd.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -26,11 +29,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-
-import java.util.HashMap;
-import java.util.Map;
-
-public class signup_activity extends AppCompatActivity implements View.OnClickListener {
+public class signupPage extends AppCompatActivity implements View.OnClickListener {
 
     private FirebaseAuth mAuth;
     private FirebaseAuth me;
@@ -58,7 +57,7 @@ public class signup_activity extends AppCompatActivity implements View.OnClickLi
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(signup_activity.this,Auth.class);
+                Intent intent = new Intent(signupPage.this, authController.class);
                 startActivity(intent);
             }
         });
@@ -183,7 +182,7 @@ public class signup_activity extends AppCompatActivity implements View.OnClickLi
         final String genderBar = gender2[0];
 
         if(nameBar.isEmpty() || jelaBAr.isEmpty() || Upo.isEmpty() || phone.isEmpty() || genderBar.isEmpty()){
-            Toast.makeText(signup_activity.this,"COMPLETE ALL DATA",Toast.LENGTH_LONG).show();
+            Toast.makeText(signupPage.this,"COMPLETE ALL DATA",Toast.LENGTH_LONG).show();
             number.requestFocus();
             return;
         }
@@ -229,7 +228,7 @@ public class signup_activity extends AppCompatActivity implements View.OnClickLi
                   //  Toast.makeText(getApplicationContext(),"Succefull",Toast.LENGTH_SHORT).show();
                     //Toast.makeText(getApplicationContext(),"Succefull",Toast.LENGTH_SHORT).show();
                     finish();
-                    Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                    // intent.putExtra(MainActivity.EMAIL,pass);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
