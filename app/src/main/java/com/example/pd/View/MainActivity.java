@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         pro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, profileOwn.class);
+                Intent intent = new Intent(MainActivity.this, splashPage.class);
                 startActivity(intent);
             }
         });

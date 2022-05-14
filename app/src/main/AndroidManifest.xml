@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.pd">
+
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -24,16 +25,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Controller.permissionController"></activity>
+        <activity
+            android:name=".showTime"
+            android:exported="true" />
+        <activity android:name=".Controller.permissionController" />
         <activity android:name=".View.disclimerPage" />
         <activity android:name=".View.splashPage" />
         <activity android:name=".View.profileDoner" />
         <activity android:name=".View.profileOwn" />
         <activity android:name=".View.aboutPage" />
         <activity android:name=".View.searchPlasma" />
-        <activity android:name=".View.signupPage" />
+        <activity android:name=".View.MainActivity" />
         <activity android:name=".Controller.authController" />
-        <activity android:name=".View.MainActivity">
+        <activity android:name=".View.signupPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
