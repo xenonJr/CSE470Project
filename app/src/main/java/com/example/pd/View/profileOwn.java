@@ -34,10 +34,8 @@ public class profileOwn extends AppCompatActivity {
          jela = findViewById(R.id.pj);
         uj = findViewById(R.id.puj);
         log = findViewById(R.id.logout);
-        log.setVisibility(View.INVISIBLE);
         sin = findViewById(R.id.sin);
         sin = findViewById(R.id.sin);
-        sin.setVisibility(View.INVISIBLE);
         button = findViewById(R.id.back_button_profile);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,16 +55,16 @@ public class profileOwn extends AppCompatActivity {
             log.setVisibility(View.VISIBLE);
             uid = mAuth.getCurrentUser().getUid();
             DocumentReference documentReference = firebaseFirestore.collection("users").document(uid);
-        documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+             documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                   Doner doner = documentSnapshot.toObject(Doner.class);
-                   name.setText(getString(R.string.username)+doner.getName());
-                   jela.setText(getString(R.string.district)+doner.getJela());
-                   uj.setText(getString(R.string.sub_district)+doner.getUpojela());
-                   bg.setText(getString(R.string.blood_group)+doner.getBg());
-                   gen.setText(getString(R.string.gender)+doner.getGender());
-                   num.setText(getString(R.string.number)+doner.getNumber());
+                  // name.setText(getString(R.string.username)+doner.getName());
+//                   jela.setText(getString(R.string.district)+doner.getJela());
+//                   uj.setText(getString(R.string.sub_district)+doner.getUpojela());
+//                   bg.setText(getString(R.string.blood_group)+doner.getBg());
+//                   gen.setText(getString(R.string.gender)+doner.getGender());
+                   num.setText(getString(R.string.email)+":  "+mAuth.getCurrentUser().getEmail());
             }
         });}else{
             name.setText("    Please Sign Up First");
@@ -92,7 +90,7 @@ public class profileOwn extends AppCompatActivity {
             public void onClick(View v) {
                 mAuth.getInstance().signOut();
                 finish();
-                Intent intent = new Intent(profileOwn.this,MainActivity.class);
+                Intent intent = new Intent(profileOwn.this,signupPage.class);
                 startActivity(intent);
             }
         });

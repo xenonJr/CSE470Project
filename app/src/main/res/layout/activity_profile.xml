@@ -12,9 +12,9 @@
         android:layout_width="134dp"
         android:layout_height="47dp"
         android:background="@drawable/custom_button"
-        android:text="Sign Up"
+        android:text="Change Pass"
         android:textColor="@color/colorBlack"
-        android:textSize="20sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -23,6 +23,7 @@
         app:layout_constraintVertical_bias="0.903" />
 
     <Button
+        android:visibility="gone"
         android:id="@+id/back_button_profile"
         android:layout_width="40dp"
         android:layout_height="48dp"
@@ -51,24 +52,23 @@
 <!--        app:layout_constraintTop_toTopOf="parent"-->
 <!--        app:layout_constraintVertical_bias="0.107" />-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+    <ImageView
+
         android:layout_marginTop="6dp"
         android:layout_marginEnd="11dp"
-        android:text="PROFILE"
-        android:textColor="@color/colorBlack"
-        android:textSize="30sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.014" />
-
+        app:layout_constraintVertical_bias="0.133"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        app:srcCompat="@drawable/batlogo" />
 
     <TextView
+        android:visibility="gone"
         android:id="@+id/pn"
         android:layout_width="wrap_content"
         android:layout_height="37dp"
@@ -86,17 +86,18 @@
         android:id="@+id/pnum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/number"
-        android:textSize="25sp"
+        android:text="@string/email"
         android:textColor="@color/colorBlack"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintHorizontal_bias="0.141"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.347" />
+        app:layout_constraintVertical_bias="0.482" />
 
     <TextView
+        android:visibility="gone"
         android:id="@+id/pbg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -111,6 +112,7 @@
         app:layout_constraintVertical_bias="0.437" />
 
     <TextView
+        android:visibility="gone"
         android:id="@+id/pj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -125,6 +127,7 @@
         app:layout_constraintVertical_bias="0.526" />
 
     <TextView
+        android:visibility="gone"
         android:id="@+id/puj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -139,6 +142,7 @@
         app:layout_constraintVertical_bias="0.608" />
 
     <TextView
+        android:visibility="gone"
         android:id="@+id/pgen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

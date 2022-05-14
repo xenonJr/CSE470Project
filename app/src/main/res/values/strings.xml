@@ -15,8 +15,8 @@
     <string name="district">বিভাগ :</string>
     <string name="sub_district">জেলা :</string>
     <string name="gender">লিঙ্গ :</string>
-    <string name="user">ব্যবহারকারীর মেইল</string>
-    <string name="password">পাসওয়ার্ড</string>
+    <string name="user">Email</string>
+    <string name="password">Password</string>
     <string name="email">Email</string>
     <string name="logout">LOGOUT</string>
     <string name="number">ফোন নাম্বার : </string>

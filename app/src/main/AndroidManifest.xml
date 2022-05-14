@@ -26,6 +26,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".View.signIn"
+            android:exported="true" />
+        <activity
+            android:name=".View.userView"
+            android:exported="true" />
+        <activity
             android:name=".showTime"
             android:exported="true" />
         <activity android:name=".Controller.permissionController" />

@@ -4,10 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidProjects/PD/app/src/main/res/layout/activity_main.xml" value="0.143359375" />
+        <entry key="..\:/AndroidProjects/PD/app/src/main/res/layout/activity_profile.xml" value="0.219140625" />
         <entry key="..\:/AndroidProjects/PD/app/src/main/res/layout/activity_search_plasma.xml" value="0.275" />
         <entry key="..\:/AndroidProjects/PD/app/src/main/res/layout/activity_show_time.xml" value="0.143359375" />
+        <entry key="..\:/AndroidProjects/PD/app/src/main/res/layout/activity_sign_in.xml" value="0.219140625" />
         <entry key="..\:/AndroidProjects/PD/app/src/main/res/layout/activity_signup.xml" value="0.275" />
         <entry key="..\:/AndroidProjects/PD/app/src/main/res/layout/activity_splash.xml" value="0.15390625" />
+        <entry key="..\:/AndroidProjects/PD/app/src/main/res/layout/activity_user_view.xml" value="0.20859375" />
       </map>
     </option>
   </component>
