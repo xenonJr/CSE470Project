@@ -12,7 +12,7 @@
         android:layout_width="134dp"
         android:layout_height="47dp"
         android:background="@drawable/custom_button"
-        android:text="Change Pass"
+        android:text="Home Page"
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.903" />
 
     <Button
-        android:visibility="gone"
+        android:visibility="visible"
         android:id="@+id/back_button_profile"
         android:layout_width="40dp"
         android:layout_height="48dp"
@@ -53,34 +53,20 @@
 <!--        app:layout_constraintVertical_bias="0.107" />-->
 
 
-    <ImageView
-
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="11dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.133"
-        android:layout_width="190dp"
-        android:layout_height="190dp"
-        app:srcCompat="@drawable/batlogo" />
-
     <TextView
-        android:visibility="gone"
         android:id="@+id/pn"
         android:layout_width="wrap_content"
         android:layout_height="37dp"
         android:text="@string/username"
         android:textColor="@color/colorBlack"
         android:textSize="25sp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.265" />
+        app:layout_constraintVertical_bias="0.308" />
 
     <TextView
         android:id="@+id/pnum"
@@ -91,28 +77,28 @@
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.482" />
+        app:layout_constraintVertical_bias="0.453" />
 
     <TextView
-        android:visibility="gone"
         android:id="@+id/pbg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/blood_group"
         android:textColor="@color/colorBlack"
         android:textSize="25sp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.437" />
+        app:layout_constraintVertical_bias="0.384" />
 
     <TextView
-        android:visibility="gone"
+        android:visibility="visible"
         android:id="@+id/pj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -127,34 +113,34 @@
         app:layout_constraintVertical_bias="0.526" />
 
     <TextView
-        android:visibility="gone"
         android:id="@+id/puj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sub_district"
         android:textColor="@color/colorBlack"
         android:textSize="25sp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.608" />
+        app:layout_constraintVertical_bias="0.592" />
 
     <TextView
-        android:visibility="gone"
         android:id="@+id/pgen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/gender"
         android:textColor="@color/colorBlack"
         android:textSize="25sp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.694" />
+        app:layout_constraintVertical_bias="0.67" />
 
     <Button
         android:id="@+id/logout"

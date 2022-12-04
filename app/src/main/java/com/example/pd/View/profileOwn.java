@@ -59,11 +59,11 @@ public class profileOwn extends AppCompatActivity {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                   Doner doner = documentSnapshot.toObject(Doner.class);
-                  // name.setText(getString(R.string.username)+doner.getName());
-//                   jela.setText(getString(R.string.district)+doner.getJela());
-//                   uj.setText(getString(R.string.sub_district)+doner.getUpojela());
-//                   bg.setText(getString(R.string.blood_group)+doner.getBg());
-//                   gen.setText(getString(R.string.gender)+doner.getGender());
+                   name.setText(getString(R.string.username)+doner.getName());
+                   jela.setText(getString(R.string.district)+doner.getJela());
+                   uj.setText(getString(R.string.sub_district)+doner.getUpojela());
+                   bg.setText(getString(R.string.blood_group)+doner.getBg());
+                   gen.setText(getString(R.string.gender)+doner.getGender());
                    num.setText(getString(R.string.email)+":  "+mAuth.getCurrentUser().getEmail());
             }
         });}else{
@@ -85,6 +85,15 @@ public class profileOwn extends AppCompatActivity {
                 }
             });
         }
+
+
+        sin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(profileOwn.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
         log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

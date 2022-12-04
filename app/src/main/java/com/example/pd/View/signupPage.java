@@ -187,18 +187,18 @@ public class signupPage extends AppCompatActivity implements View.OnClickListene
     private void register() {
         final String mail = upmail.getText().toString();
         final String pass = up_pass.getText().toString();
-//        final String nameBar = name.getText().toString();
-//        final String jelaBAr = jela2[0];
-//        final String Upo = upojela2[0];
-//        final String phone =number.getText().toString();
-//        final int p = Integer.parseInt(phone);
-//        final String genderBar = gender2[0];
+        final String nameBar = name.getText().toString();
+        final String jelaBAr = jela2[0];
+        final String Upo = upojela2[0];
+        final String phone =number.getText().toString();
+        final int p = Integer.parseInt(phone);
+        final String genderBar = gender2[0];
 
-//        if(nameBar.isEmpty() || jelaBAr.isEmpty() || Upo.isEmpty() || phone.isEmpty() || genderBar.isEmpty()){
-//            Toast.makeText(signupPage.this,"COMPLETE ALL DATA",Toast.LENGTH_LONG).show();
-//            number.requestFocus();
-//            return;
-//        }
+        if(nameBar.isEmpty() || jelaBAr.isEmpty() || Upo.isEmpty() || phone.isEmpty() || genderBar.isEmpty()){
+            Toast.makeText(signupPage.this,"COMPLETE ALL DATA",Toast.LENGTH_LONG).show();
+            number.requestFocus();
+            return;
+        }
 
         if(mail.isEmpty()){
             upmail.setError("Enter mail");
@@ -215,32 +215,33 @@ public class signupPage extends AppCompatActivity implements View.OnClickListene
             up_pass.requestFocus();
             return;
         }
-      //  final Doner doner = new Doner(nameBar,jelaBAr,blood[0],p);
-       // final Doner Dprofile = new Doner(nameBar, jelaBAr, blood[0], Upo, genderBar,p);
+        //final Doner doner = new Doner(nameBar,jelaBAr,blood[0],p);
+        final Doner Dprofile = new Doner(nameBar, jelaBAr, blood[0], Upo, genderBar,p);
 
         mAuth.createUserWithEmailAndPassword(mail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
               //  p.setVisibility(View.GONE);
                 if (task.isSuccessful()) {
-//                    uid = mAuth.getCurrentUser().getUid();
-//                    DocumentReference documentReference = firebaseFirestore.collection("users").document(uid);
-//                    documentReference.set(Dprofile).addOnSuccessListener(new OnSuccessListener<Void>() {
-//                        @Override
-//                        public void onSuccess(Void aVoid) {
-//                            Toast.makeText(getApplicationContext(),"Succefull",Toast.LENGTH_SHORT).show();
-//                        }
-//                    }).addOnFailureListener(new OnFailureListener() {
-//                        @Override
-//                        public void onFailure(@NonNull Exception e) {
-//                            Toast.makeText(getApplicationContext()," Not Succefull"+e,Toast.LENGTH_SHORT).show();
-//                        }
-//                    });
-//                 //   databaseReference.push().setValue(doner);
-//                    databaseReference.push().setValue(Dprofile);
-//                  //  Toast.makeText(getApplicationContext(),"Succefull",Toast.LENGTH_SHORT).show();
-//                    //Toast.makeText(getApplicationContext(),"Succefull",Toast.LENGTH_SHORT).show();
-                    finish();
+                    uid = mAuth.getCurrentUser().getUid();
+                    DocumentReference documentReference = firebaseFirestore.collection("users").document(uid);
+                    documentReference.set(Dprofile).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void aVoid) {
+                            Toast.makeText(getApplicationContext(),"Succefull",Toast.LENGTH_SHORT).show();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(getApplicationContext()," Not Succefull"+e,Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                 //   databaseReference.push().setValue(doner);
+
+                    databaseReference.push().setValue(Dprofile);
+                   Toast.makeText(getApplicationContext(),"Successful",Toast.LENGTH_SHORT).show();
+
+//                    finish();
                     Intent intent = new Intent(getApplicationContext(), profileOwn.class);
                    // intent.putExtra(MainActivity.EMAIL,pass);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

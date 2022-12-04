@@ -41,9 +41,9 @@
         <activity android:name=".View.profileOwn" />
         <activity android:name=".View.aboutPage" />
         <activity android:name=".View.searchPlasma" />
-        <activity android:name=".View.MainActivity" />
+        <activity android:name=".View.signupPage" />
         <activity android:name=".Controller.authController" />
-        <activity android:name=".View.signupPage">
+        <activity android:name=".View.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
